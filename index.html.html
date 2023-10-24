@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<style>
+  .ll{width: 100%;
+height: 50px;}
+  .op{
+    background-color:rgba(228, 144, 48, 0.597);
+  }
+  .opi{
+    background-color:orange;
+  }
+  .bg{
+    background-color: grey;
+  }
+</style>
+<script src="https://kit.fontawesome.com/a254e66e71.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5" width="100%">
+            <div class="col-4"></div>
+            <div class="bg col-4 " style="border:5px solid rgb(130, 116, 116); border-radius: 15px;">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div class="row mt-5">
+                            <div class="col-12"><input id="result" type="text" value="" placeholder="0" readonly style="width: 100%; height: 100px;"></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-6"><button class="ll op" type="button" id="clear" value="clear" width="100%" onclick="delbutton()"><b>DEL</b></button></div>
+                            <div class="col-6"><button class="ll op" type="button" id="clear" value="clear" width="100%" onclick="acbutton()"><b>AC</b></button></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-3"><button class="ll" type="button" id="seven" value="7" width="100%" onclick="display(value)">7</button></div>
+                            <div class="col-3"><button class="ll" type="button" value="8" id="eight" width="100%" onclick="display(value)">8</button></div>
+                            <div class="col-3"><button class="ll" type="button" value="9" id="nine" width="100%" onclick="display(value)">9</button></div>
+                            <div class="col-3"><button class="ll op" type="button" id="add" value="add" onclick="display('+')"><i class="fa-solid fa-plus"></i></button></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-3"><button class="ll" type="button" id="four" value="4" width="100%" onclick="display(value)">4</button></div>
+                            <div class="col-3"><button class="ll" type="button" id="five" value="5" width="100%" onclick="display(value)">5</button></div>
+                            <div class="col-3"><button class="ll" type="button" id="six" value="6" width="100%" onclick="display(value)">6</button></div>
+                            <div class="col-3"><button class="ll op" type="button" id="sub" value="sub" onclick="display('-')"><i class="fa-solid fa-minus"></i></button></div>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-3"><button class="ll" type="button" id="one" value="1" width="100%" onclick="display(value)">1</button></div>
+                            <div class="col-3"><button class="ll" type="button" id="two" value="2" width="100%" onclick="display(value)">2</button></div>
+                            <div class="col-3"><button class="ll" type="button" id="three" value="3" width="100%" onclick="display(value)">3</button></div>
+                            <div class="col-3"><button class="ll op" type="button" id="mul" value="mul" onclick="display('*')"><i class="fa-solid fa-xmark"></i></button></div>
+                        </div>
+                        <div class="row mt-2 mb-5 ">
+                            <div class="col-3"><button class="ll op" type="button" id="per" value="%" width="100%" onclick="display('%')">%</button></div>
+                            <div class="col-3"><button class="ll" type="button" id="zero" value="0" width="100%" onclick="display(value)">0</button></div>
+                            <div class="col-3"><button class="ll op" type="button" id="div" value="div" width="100%" onclick="display('/')"><i class="fa-solid fa-divide"></i></button></div>
+                            <div class="col-3"><button class="ll opi" type="button" id="eq" value="eq" onclick="calculate()"><i class="fa-solid fa-equals"></i></button></div>
+                        </div>
+                       
+
+                        </div>
+                        </div>
+                       
+                   
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- col-8 div close -->
+            </div>
+            <div class="col-4"></div>
+            <!-- row div close -->
+        </div>
+
+
+
+
+
+
+<!-- container div close -->
+    </div>
+</body>
+<script src="./calc.js">
+</script>
+</html>
